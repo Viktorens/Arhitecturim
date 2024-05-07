@@ -80,13 +80,13 @@
 }
 
 /* Social links */
-.navbar .social-box-container {
+.navbar .social-container {
     height: 10%;
     width: 100%;
     position: relative;
 }
 
-.navbar .social-box {
+.navbar .social {
     display: table-row;
     text-align: center;
     vertical-align: bottom;
@@ -99,12 +99,12 @@
     transform: translate(-50%, -50%);
 }
 
-.navbar .social-box a {
+.navbar .social a {
     text-decoration: none;
     width: 0px;
 }
 
-.navbar .social-box img {
+.navbar .social img {
     width: 15px;
     height: 15px;
 
