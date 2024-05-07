@@ -1,0 +1,277 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400; 
+
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.4ms;
+    
+    background-color: white;
+}
+
+
+
+/* CONTENT */
+.content {
+    height: 100%;
+    margin: 0;
+    margin-left: 275px;
+}
+
+/* Header */
+.header-wrapper {
+    display: table;
+    table-layout: fixed;
+    position: relative;
+    width: 100%;   
+}
+
+.text-header h1 {
+    color: white;
+
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100%;
+    margin: 0px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/* Section */
+.section-wrapper {
+    display: table;
+    table-layout: fixed;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    background-color: white;
+}
+
+.text-container {
+    display: table-cell;
+    padding: 100px;
+    text-align: center;
+    width: 100%;
+}
+
+.text-container p {
+    display: block;
+    width: 600px;
+    margin: auto;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #777;
+}
+
+/* Portfolio */
+.flex-wrapper {
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+    margin: 0 auto;
+}
+
+.flex-wrapper .flex-item {
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    min-width: 33.33%;
+    min-height: 400px;
+}
+
+.flex-wrapper .flex-item .flex-item-info {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+}
+
+.flex-wrapper .flex-item .flex-item-info:hover {
+    background-color: rgba(0,0,0,.6);
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+.flex-wrapper .flex-item > a {
+    display: table;
+    height: 100%;
+    width: 100%;
+    text-align: center;    
+    text-decoration: none;
+    color: white;
+}
+
+.flex-wrapper .flex-item h2 {
+    display: table-cell;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 2px;
+    vertical-align: middle;
+}
+
+/* Team */
+.section-wrapper .team-container {
+    display: table;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.section-wrapper .team-container .team-member {
+    display: table-cell;
+    text-align: center;
+    width: 300px;
+    margin: 0 40px;
+    padding: 0 25px;
+}
+
+.section-wrapper .team-container .team-member > img {
+    height: 400px;
+    margin: 0px;
+}
+
+.section-wrapper .team-container .team-member h5 {
+    display: block;
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;    
+    font-weight: 800;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.section-wrapper .team-container .team-member h4 {
+    display: block;
+    width: 100%;
+    
+    font-family: 'Dosis', sans-serif;
+    font-size: 30px;    
+    font-weight: 800;
+    
+    padding-bottom: 15px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+    border: 0;
+    border-bottom: .5px;
+    border-style: solid;
+    border-color: #ddd;
+}
+
+.section-wrapper .team-container .team-member p {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 0px;
+    width: 100%;
+}
+
+#blog1 p, #blog2 p {
+    font-size: 12px;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+/* Parallax */
+.header-wrapper .parallax-container {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
+
+.header-wrapper .parallax-container .parallax-overlay {
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: .6;
+}
+
+.section-wrapper .parallax-container {
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    display: table;
+}
+
+.section-wrapper .parallax-container .parallax-overlay {
+    height: 400px;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: .6;
+}
+
+/* Parallax IDs */
+#page-header {
+    background-position: center;
+    background-image: url(../images/81229032_xxl.jpg);
+}
+
+#mid-section1 {
+    background-position: center;
+    background-image: url(../images/brotherside+x+sonyalpha.jpg);
+}
+
+#mid-section2 {
+    background-position: center;
+    background-image: url(../images/28218731_xxl.jpg);
+}
+
+#item1, #item2, #item3 {
+    text-align: center;
+    width: 300px;
+    padding: 0 40px;
+}
+
+#blog1, #blog2 {
+    width: 500px;
+    padding: 0 50px;
+}
+
+.map {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+/* TEXT STYLES */
+h1 {
+    font-family: 'Dosis', sans-serif;
+    font-size: 50px;
+    letter-spacing: 15px;
+}
+
+.no-decoration {
+    text-decoration: none;
+    color: inherit
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-bold {
+    font-weight: 700;
+}
+
+/* MISC */
+::selection {
+    background-color: #777;
+    color: white!important;
+}

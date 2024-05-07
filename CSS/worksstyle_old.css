@@ -1,0 +1,380 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400; 
+
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.4ms;
+    
+    background-color: white;
+}
+
+/* NAVIGATION BAR */
+.navbar {
+    display: block;
+    float: left;
+    position: fixed;
+
+    text-align: center;
+    overflow-y: auto;
+    
+    height: 100%;       
+    width: 275px;
+    background-color: white;
+}
+
+.box-shadow {
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.39);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.39);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.39);
+}
+
+/* Logo */
+.navbar .logo-container {
+    border-collapse: collapse;
+}
+
+.navbar .logo-container img {
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.navbar .logo-container img:hover {
+    opacity: .5;
+}
+
+/* Menu items */
+.navbar .menu-container {
+    display: table-row;
+    height: 75%;
+    width: 100%;
+    position: relative;
+}
+
+.navbar .menu-container .menu-items {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow-y: auto;
+}
+
+.navbar .menu-items ul {
+    list-style: none;
+    margin: auto;
+    padding: 0px;
+}
+
+.navbar .menu-items ul li {
+    width: 100%;
+    padding: 8px;
+}
+
+.navbar .menu-items ul li a {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    width: 100%;
+}
+
+.navbar .menu-items ul li a:hover {
+    color: #777;
+}
+
+.navbar .menu-items ul li a:active {
+    color: #777;
+}
+
+/* Social links */
+.navbar .social-box-container {
+    height: 10%;
+    width: 100%;
+    position: relative;
+}
+
+.navbar .social-box {
+    display: table-row;
+    text-align: center;
+    vertical-align: bottom;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navbar .social-box a {
+    text-decoration: none;
+    width: 0px;
+}
+
+.navbar .social-box img {
+    width: 15px;
+    height: 15px;
+
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* CONTENT */
+.content {
+    text-align: center;
+    height: 100%;
+    margin: 0;
+    margin-left: 275px;
+}
+
+.portfolio-container {
+    display: table;
+    width: 100%;
+    text-align: center;
+    border-bottom-color: rgba(0,0,0,0.1);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.images-container {
+    display: table-cell;
+    width: 60%;
+    margin: 50px;
+    position: relative;
+}
+
+/* Slideshow container */
+.slideshow-container { 
+    max-width: 700px;
+    position: relative;
+    margin: auto;
+}
+
+.slideshow-container img {
+    vertical-align: middle;
+    max-width: 700px;
+    height: 500px;
+    width: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.5);
+}
+  
+/* Caption text */
+.text {
+    background-color: rgba(7,7,7,0.5);
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+  
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+    background-color: #717171;
+}
+  
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* DESCRIPTION */
+.description-container {
+    display: table-cell;
+    text-align: left;
+    vertical-align: top;
+    width: 100%;
+    padding-top: 0;
+    margin: auto;
+}
+
+.description-container h3 {
+    font-size: 30px;
+    font-family: 'Dosis', sans-serif;
+}
+
+.description-container p {
+    display: block;
+    width: 70%;
+    
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #777;
+}
+
+/* PORTFOLIO */
+.section-wrapper {
+    display: table;
+    text-align: center;
+    position: relative;
+    background-color: white;
+    margin: auto;
+}
+
+.text-container {
+    display: block;
+    padding: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+.text-container p {
+    display: block;
+    width: 600px;
+    margin: auto;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #777;
+}
+
+/* Flex */
+.flex-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.flex-wrapper .flex-item {
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    min-width: 33.33%;
+    min-height: 400px;
+}
+
+.flex-wrapper .flex-item .flex-item-info {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+}
+
+.flex-wrapper .flex-item .flex-item-info:hover {
+    background-color: rgba(0,0,0,.6);
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+.flex-wrapper .flex-item > a {
+    display: table;
+    height: 100%;
+    width: 100%;
+    text-align: center;    
+    text-decoration: none;
+    color: white;
+}
+
+.flex-wrapper .flex-item h2 {
+    display: table-cell;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 2px;
+    vertical-align: middle;
+}
+
+/* TEXT STYLES */
+h1 {
+    font-family: 'Dosis', sans-serif;
+    font-size: 50px;
+    letter-spacing: 15px;
+}
+
+.no-decoration {
+    text-decoration: none;
+    color: inherit
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-bold {
+    font-weight: 700;
+}
+
+/* MISC */
+::selection {
+    background-color: #777;
+    color: white!important;
+}
