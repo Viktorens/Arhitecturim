@@ -283,3 +283,40 @@ h1 {
     background-color: #777;
     color: white!important;
 }
+
+/* --- Media Queries ---- */
+
+@media (prefers-reduced-motion) {
+    .hide-elements-fade {
+        transition: none;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 576px) {
+    .content {
+        margin-left: 0px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .content {
+        margin-left: 0px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .content {
+        margin-left: 275px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
