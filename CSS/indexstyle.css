@@ -59,17 +59,16 @@ body {
 }
 
 .text-container {
-    display: table-cell;
+    display: flex;
+    flex-direction: column;
     padding: 100px;
     text-align: center;
     width: 100%;
+    align-items: center
 }
 
 .text-container p {
-    display: block;
     width: 600px;
-    margin: auto;
-
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     letter-spacing: 1px;
@@ -129,7 +128,7 @@ body {
 .section-wrapper .team-container {
     display: table;
     text-align: center;
-    margin: 50px auto;
+    margin: 50px 0;
 }
 
 .section-wrapper .team-container .team-member {
