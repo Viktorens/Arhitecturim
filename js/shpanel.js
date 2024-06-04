@@ -5,7 +5,7 @@ var tabs = document.getElementsByClassName("description-tab");
 var list = document.getElementsByClassName("submenu-item");
 
 function openPanel() {
-    container.style.height = "30vh";
+    container.style.height = "45vh";
     container.style.backgroundColor = "rgba(0,0,0,0.6)";
     hideButton.style.display = "block";
     showButton.style.display = "none";
