@@ -61,7 +61,7 @@
 
 .navbar .menu-items ul li a {
     display: block;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Outfit', sans-serif;
     font-weight: 700;
     font-size: 12px;
 
@@ -111,3 +111,39 @@
     margin-left: 10px;
     margin-right: 10px;
 }
+
+/* --- Media Queries ---- */
+
+@media (prefers-reduced-motion) {
+    .hide-elements-fade {
+        transition: none;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 576px) {
+    .navbar {
+        display: none;
+    }
+    
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .navbar {
+        display: none;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .navbar {
+        display: block;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
