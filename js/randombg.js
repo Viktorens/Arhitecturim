@@ -1,13 +1,17 @@
-var files = ["bg1.jpg", "bg2.jpg", "bg3.jpg", "bg4.jpg", "bg5.jpg"];
+var files = ["zcara.jpg"];
 var number = 0;
 randbgs1();
-randbgs2();
+// randbgs2();
 
 function randbgs1() {
     var section1 = document.getElementById("mid-section1");
+    var section2 = document.getElementById("mid-section2");
+    var header = document.getElementById("page-header");
     var rand = Math.floor(Math.random() * files.length);
     number = rand;
     section1.style.backgroundImage = "url(images/backgrounds/" + files[rand] + ")";
+    section2.style.backgroundImage = "url(images/backgrounds/" + files[rand] + ")";
+    header.style.backgroundImage = "url(images/backgrounds/" + files[rand] + ")";
 }
 
 function randbgs2() {
