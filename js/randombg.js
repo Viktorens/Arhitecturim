@@ -1,4 +1,4 @@
-var files = ["zcara.jpg"];
+var files = ["zcara.jpg", "moeciu.jpg"];
 var number = 0;
 randbgs1();
 // randbgs2();
