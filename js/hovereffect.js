@@ -1,24 +1,26 @@
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-const titleNameLetters = document.getElementById("title-name")
+const word = document.getElementsByClassName("random-letters-effect")
 
-function randomizeNameLetters(titleNameLetters) {
+function randomizeNameLetters(word) {
     let iterations = 0
     
     const interval = setInterval(() => {
-        titleNameLetters.target.innerText = titleNameLetters.target.innerText.split("")
+        word.target.innerText = word.target.innerText.split("")
         .map((letter,index) => {
             if(index < iterations) {
-                return titleNameLetters.target.dataset.value[index]
+                return word.target.dataset.value[index]
             }
             return letters[Math.floor(Math.random()*26)]
         })
         .join("")
     
-    if (iterations >= titleNameLetters.target.dataset.value.length) clearInterval(interval)
+    if (iterations >= word.target.dataset.value.length) clearInterval(interval)
     
     iterations += 1 / 3
     }, 30)
 }
 
-titleNameLetters.addEventListener("click", randomizeNameLetters)
-titleNameLetters.addEventListener("mouseover", randomizeNameLetters)
+for (var i = 0; i < word.length; i++) {
+    word[i].addEventListener("click", randomizeNameLetters)
+    word[i].addEventListener("mouseover", randomizeNameLetters)
+}
