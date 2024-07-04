@@ -147,7 +147,7 @@ body {
 .section-wrapper .team-container .team-member h5 {
     display: block;
     font-family: 'Outfit', sans-serif;
-    font-size: 18px;    
+    font-size: 1.5rem;    
     font-weight: 800;
     margin-top: 30px;
     margin-bottom: 5px;
@@ -175,7 +175,7 @@ body {
 .section-wrapper .team-container .team-member p {
     display: block;
     font-family: 'Outfit', sans-serif;
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: 700;
     margin: 0px;
     width: 100%;
@@ -275,7 +275,7 @@ h1 {
     color: #777;
     font-family: 'Outfit', sans-serif;
     font-weight: 800;
-
+    font-size: 1.2rem;
 }
 
 /* MISC */

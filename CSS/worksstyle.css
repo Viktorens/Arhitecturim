@@ -151,13 +151,12 @@ body {
 .slideshow-container img {
     vertical-align: middle;
     max-height: 100vh;
-    object-fit: cover;
 }
 
 /* Hide the images by default */
 .mySlides {
     display: none;
-
+    background-color: white;
 }
 
 /* Next & previous buttons */
@@ -270,7 +269,7 @@ body {
 
 .buttons .details {
     font-family: 'Outfit', sans-serif;
-    font-weight: 700;
+    font-weight: 100;
     text-align: right;
     position: absolute;
     top: 0%;
@@ -386,8 +385,12 @@ h1 {
         font-size: 3rem;
     }
     .buttons .details {
-        font-size: 3rem;
+        font-size: 1.5rem;
     }
+    .slideshow-container img {
+        object-fit: cover;
+    }
+    
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -399,7 +402,10 @@ h1 {
         font-size: 3rem;
     }
     .buttons .details {
-        font-size: 3rem;
+        font-size: 1.5rem;
+    }
+    .slideshow-container img {
+        object-fit: cover;
     }
 }
 
@@ -417,7 +423,10 @@ h1 {
         font-size: 2rem;
     }
     .buttons .details {
-        font-size: 2rem;
+        font-size: 1rem;
+    }
+    .slideshow-container img {
+        object-fit: contain;
     }
 }
 
