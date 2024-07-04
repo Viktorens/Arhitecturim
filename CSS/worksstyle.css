@@ -151,6 +151,7 @@ body {
 .slideshow-container img {
     vertical-align: middle;
     max-height: 100vh;
+    object-fit: contain;
 }
 
 /* Hide the images by default */
@@ -387,9 +388,9 @@ h1 {
     .buttons .details {
         font-size: 1.5rem;
     }
-    .slideshow-container img {
-        object-fit: cover;
-    }
+    /* .slideshow-container img {
+        object-fit: contain;
+    } */
     
 }
 
@@ -404,9 +405,9 @@ h1 {
     .buttons .details {
         font-size: 1.5rem;
     }
-    .slideshow-container img {
-        object-fit: cover;
-    }
+    /* .slideshow-container img {
+        object-fit: contain;
+    } */
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -425,9 +426,9 @@ h1 {
     .buttons .details {
         font-size: 1rem;
     }
-    .slideshow-container img {
+    /* .slideshow-container img {
         object-fit: contain;
-    }
+    } */
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
