@@ -5,7 +5,7 @@ var tabs = document.getElementsByClassName("description-tab");
 var list = document.getElementsByClassName("submenu-item");
 
 function openPanel() {
-    container.style.height = "200px";
+    container.style.height = "45vh";
     container.style.backgroundColor = "rgba(0,0,0,0.6)";
     hideButton.style.display = "block";
     showButton.style.display = "none";
@@ -13,7 +13,7 @@ function openPanel() {
 }
 
 function closePanel() {
-    container.style.height = "50px";
+    container.style.height = "75px";
     container.style.backgroundColor = "rgba(0,0,0,0.3)";
     hideButton.style.display = "none";
     showButton.style.display = "block";    
