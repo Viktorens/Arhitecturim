@@ -1,4 +1,4 @@
-var files = ["zcara.jpg", "moeciu.jpg"];
+var files = ["zcara.jpg", "sala-multifuctionala-moeciu-de-sus.jpg", "centru-de-medicina-preventiva.jpg"];
 var number = 0;
 randbgs1();
 // randbgs2();
