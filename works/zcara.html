@@ -11,6 +11,31 @@
     </head>
 
     <body>
+        <!-- The menu overlay -->
+        <div id="my-nav" class="overlay">
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="close-btn" onclick="closeNav(); enableScrolling()">&times;</a>
+            <!-- Overlay content -->
+            <div class="overlay-content text-uppercase">
+                <h4>meniu</h4>
+                <a class="menu-button-fade-1 hide-menu-elements-fade" href="../index.html#Welcome"
+                    onclick="closeNav(); enableScrolling()">Acasă</a>
+                <a class="menu-button-fade-2 hide-menu-elements-fade" href="../index.html#Works"
+                    onclick="closeNav(); enableScrolling()">Proiecte</a>
+                <a class="menu-button-fade-3 hide-menu-elements-fade" href="../index.html#Team"
+                    onclick="closeNav(); enableScrolling()">Echipă</a>
+                <a class="menu-button-fade-4 hide-menu-elements-fade" href="../index.html#Blog"
+                    onclick="closeNav(); enableScrolling()">Blog</a>
+                <a class="menu-button-fade-5 hide-menu-elements-fade" href="../index.html#Contact"
+                    onclick="closeNav(); enableScrolling()">Contact</a>
+            </div>
+        </div>
+        <!-- Menu Bar -->
+        <div class="menubutton show-background" id="navbar">
+            <div class="banner-wrapper" id="navbar-button">
+                <a class="banner-button" onclick="openNav(); disableScrolling()"></a>
+            </div>
+        </div>
         <div class="navbar">
             <div class="wrapper">
                 <div class="logo-container">
@@ -143,4 +168,5 @@
         </div>
         <script type="text/javascript" src="../js/slideshow.js"></script>
     </body>
+    <script type="text/javascript" src="../js/mobile-menu.js"></script>
 </html>
