@@ -6,15 +6,15 @@ var list = document.getElementsByClassName("submenu-item");
 
 function openPanel() {
     container.style.height = "45vh";
-    container.style.backgroundColor = "rgba(0,0,0,0.6)";
+    container.style.backgroundColor = "rgba(255,0,0,0.6)";
     hideButton.style.display = "block";
     showButton.style.display = "none";
     showTab(0);
 }
 
 function closePanel() {
-    container.style.height = "75px";
-    container.style.backgroundColor = "rgba(0,0,0,0.3)";
+    container.style.height = "30px";
+    container.style.backgroundColor = "rgba(255,0,0,0.5)";
     hideButton.style.display = "none";
     showButton.style.display = "block";    
     hideAllTabs();
@@ -27,7 +27,7 @@ function showTab(n) {
         list[i].style.color = "white";
     }
     tabs[n].style.display = "block";
-    list[n].style.color = "#aaa";
+    list[n].style.color = "black";
 
 }
 
