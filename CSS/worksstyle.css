@@ -390,7 +390,7 @@ h1 {
         margin-left: 0px;
     }
     .buttons .details, .submenu {
-        font-size: 1.5rem;
+        font-size: .8rem;
     }
     
 }
@@ -401,7 +401,7 @@ h1 {
         margin-left: 0px;
     }
     .buttons .details, .submenu {
-        font-size: 1.5rem;
+        font-size: .8rem;
     }
 }
 
@@ -414,9 +414,6 @@ h1 {
 @media (min-width: 992px) {
     .content {
         margin-left: 275px;
-    }
-    .submenu {
-        font-size: 2rem;
     }
     .buttons .details, .submenu{
         font-size: 1rem;
