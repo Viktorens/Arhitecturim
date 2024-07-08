@@ -61,14 +61,6 @@ body {
     position: relative;
 }
 
-/* .navbar .menu-container .menu-items {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    overflow-y: auto;
-} */
-
 .navbar .menu-items ul {
     list-style: none;
     margin: auto;
@@ -135,7 +127,7 @@ body {
 
 /* CONTENT */
 .content {
-    height: 100vh;
+    height: 100dvh;
     margin: 0;
     margin-left: 275px;
     position: relative;
