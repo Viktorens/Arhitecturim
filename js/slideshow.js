@@ -41,4 +41,42 @@ function slideKeypress(e) {
   }
 }
 
+// Swipe functionality
+let xDown = null;
+let yDown = null;
+
+function handleTouchStart(evt) {
+  const firstTouch = evt.touches[0];
+  xDown = firstTouch.clientX;
+  yDown = firstTouch.clientY;
+};
+
+function handleTouchMove(evt) {
+  if (!xDown || !yDown) {
+    return;
+  }
+
+  const xUp = evt.touches[0].clientX;
+  const yUp = evt.touches[0].clientY;
+
+  const xDiff = xDown - xUp;
+  const yDiff = yDown - yUp;
+
+  if (Math.abs(xDiff) > Math.abs(yDiff)) {
+    if (xDiff > 0) {
+      /* left swipe */
+      plusSlides(1);
+    } else {
+      /* right swipe */
+      plusSlides(-1);
+    }
+  }
+  /* reset values */
+  xDown = null;
+  yDown = null;
+};
+
+document.addEventListener('touchstart', handleTouchStart, false);
+document.addEventListener('touchmove', handleTouchMove, false);
+
 document.body.addEventListener('keydown', slideKeypress);

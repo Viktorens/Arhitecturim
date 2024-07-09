@@ -1,4 +1,12 @@
-var files = ["zcara.jpg", "sala-multifuctionala-moeciu-de-sus.jpg", "centru-de-medicina-preventiva.jpg", "studiu-pentru-o-biserica-protestanta.jpg", "locuinta-ip.jpg", "locuinta-m.jpg", "bungalou-mauritius.jpg"];
+var files = ["zcara.jpg",
+    "sala-multifuctionala-moeciu-de-sus.jpg",
+    "centru-de-medicina-preventiva.jpg",
+    "studiu-pentru-o-biserica-protestanta.jpg",
+    "locuinta-ip.jpg",
+    "locuinta-m.jpg",
+    "bungalou-mauritius.jpg",
+    "biserica-protestanta-fetesti.jpg",
+    "locuinta-c.jpg"];
 var number = 0;
 randbgs1();
 // randbgs2();
