@@ -277,8 +277,9 @@
     transition-delay: 600ms !important;
 }
 
+/* 800 if blog button exist */
 .menu-button-fade-5 {
-    transition-delay: 800ms !important;
+    transition-delay: 600ms !important;
 }
 
 /* --- Media Queries ---- */
